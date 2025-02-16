@@ -1,3 +1,4 @@
+
 let listado_amigos = [];
 
 // ************(1) funcion agregar amigos ******************
@@ -22,6 +23,26 @@ function agregarAmigo() {
     }
 
     listado_amigos.push(nombre);
-    // actualizarLista(); // funcion que actualizara la lista de amigos
+    actualizarLista();
     input.value = "";
 }
+
+//*********(2)  funcion actualizar lista **********************
+function actualizarLista() {
+
+
+    const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+
+    for (const amigo of listado_amigos) {
+        const li = document.createElement("li");
+        li.textContent = amigo;
+        lista.appendChild(li);
+    }
+
+          
+}
+
+
+
+
