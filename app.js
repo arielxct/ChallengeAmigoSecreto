@@ -25,6 +25,7 @@ function agregarAmigo() {
     listado_amigos.push(nombre);
     actualizarLista();
     input.value = "";
+    input.focus(); // Esta línea agrega el foco al input
 }
 
 //*********(2)  funcion actualizar lista **********************
@@ -43,6 +44,32 @@ function actualizarLista() {
           
 }
 
+// *****************(3)* funcion sortear amigo ******************
+function sortearAmigo() {
+    if (listado_amigos.length < 2) {
+        alert("Agrega al menos dos amigos antes de sortear."); // cpndiciona que por lo menos deben haber dos amigos
+        return;
+    }
+
+    const indiceListadoSorteado = Math.floor(Math.random() * listado_amigos.length);
+    const amigoSecretoSorteado = listado_amigos[indiceListadoSorteado];
+
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = "<li>⭐ El amigo secreto es: " + amigoSecretoSorteado + " ⭐</li>" ;
+
+}
+
+// *****************(4)* funcion nuevo juego ******************
+function nuevoJuego() {
+    listado_amigos = []; 
+    actualizarLista(); 
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = ""; 
+
+    
+    botonSortear.textContent = "    ⭐⭐Sortear amigo 😀😀";
+    botonSortear.onclick = sortearAmigo;
+}
 
 
 
