@@ -1,5 +1,6 @@
 # Amigo Secreto 🎁
 ![Vista previa del proyecto](assets/juego_amigo_secreto.png)
+
 ## Descripción
 
 Esta aplicación web es ideal para realizar sorteos entre personas. Empezé a acerrla para amigos, pero se puede entender a una lista de personas. En este caso se deben ingresar a traves de la pantalla. como m´nimo necesitamos a dos amigos para que se realize el sorteo. Y despues al hacer clic en el botón "Sortear amigo", el amigo sorteado /al hazar) saldrá por pantalla. Y podremos compenzar un nuevo juego. 
@@ -35,7 +36,7 @@ Esta aplicación web es ideal para realizar sorteos entre personas. Empezé a ac
 
 ## Captura de Pantalla
 
-![Vista previa del proyecto](assets/amigo-secreto.png)
+![Vista previa del proyecto](assets/amigo_secreto.png)
 - Este es el cuadro en el cual tendras que ingresar los nombres de tus amigos.
   ![Vista previa del proyecto](assets/cuadro_para_ingreso_de_amigos.png)
 - Este es el listado de amigos a sortear!
@@ -51,12 +52,7 @@ Esta aplicación web es ideal para realizar sorteos entre personas. Empezé a ac
    ![Vista previa del proyecto](assets/boton_para_iniciar_nuevo_juego.png)
   
 
-![Vista previa del proyecto](assets/amigo_ganador.png)
-![Vista previa del proyecto](assets/boton_para_iniciar_nuevo_juego.png)
-![Vista previa del proyecto](assets/boton_para_sortear_amigo.png)
-![Vista previa del proyecto](assets/cuadro_para_ingreso_de_amigos.png)
-![Vista previa del proyecto](assets/juego_amigo_secreto.png)
-![Vista previa del proyecto](assets/Listado_de_amigos.png)
+
 
 ## Contribuciones
 
