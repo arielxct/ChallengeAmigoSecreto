@@ -1,5 +1,8 @@
-# Amigo Secreto 🎁
-![Vista previa del proyecto](assets/juego_amigo_secreto.png)
+# Amigo Secreto 🎁<br><br>
+![Vista previa del proyecto](assets/juego_amigo_secreto.PNG)<br><br>
+<!--![Vista previa del proyecto](assets/amigo-secreto.png)<br>-->
+
+
 
 ## Descripción
 
@@ -36,20 +39,34 @@ Esta aplicación web es ideal para realizar sorteos entre personas. Empezé a ac
 
 ## Captura de Pantalla
 
-![Vista previa del proyecto](assets/amigo_secreto.png)
-- Este es el cuadro en el cual tendras que ingresar los nombres de tus amigos.
-  ![Vista previa del proyecto](assets/cuadro_para_ingreso_de_amigos.png)
-- Este es el listado de amigos a sortear!
-  ![Vista previa del proyecto](assets/Listado_de_amigos.png)
 
-- Ahora si haces clic en este botón y selecciona al amigos ganador.
-  ![Vista previa del proyecto](assets/boton_para_sortear_amigo.png)
+- Este es el cuadro en el cual tendras que ingresar los nombres de tus amigos.<br><br>
+  ![Vista previa del proyecto](assets/Cuadro_para_ingreso_de_amigos.PNG)
 
-- Este es tu amigo ganador!!!🎈🎈🎈
- ![Vista previa del proyecto](assets/amigo_ganador.png)
 
- - Y ahora a comenzar un nuevo juego.
-   ![Vista previa del proyecto](assets/boton_para_iniciar_nuevo_juego.png)
+ ***************************************************************************
+- Este es el listado de amigos a sortear!<br><br>
+  ![Vista previa del proyecto](assets/Listado_de_amigos.PNG)
+
+
+ **************************************************************************
+- Ahora si haces clic en este botón y selecciona al amigos ganador.<br><br>
+  ![Vista previa del proyecto](assets/Boton_para_sortear_amigo.PNG)
+
+
+  
+ **************************************************************************
+ 
+- Este es tu amigo ganador!!!🎈🎈🎈<br><br>
+ ![Vista previa del proyecto](assets/amigo_ganador.PNG)
+
+
+
+ **************************************************************************
+
+ - Y ahora a comenzar un nuevo juego.<br><br>
+![Vista previa del proyecto](assets/boton_para_iniciar_nuevo_juego.PNG)
+  
   
 
 
