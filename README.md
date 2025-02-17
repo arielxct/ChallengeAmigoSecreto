@@ -1,5 +1,5 @@
 # Amigo Secreto 🎁
-
+![Vista previa del proyecto](assets/juego_amigo_secreto.png)
 ## Descripción
 
 Esta aplicación web es ideal para realizar sorteos entre personas. Empezé a acerrla para amigos, pero se puede entender a una lista de personas. En este caso se deben ingresar a traves de la pantalla. como m´nimo necesitamos a dos amigos para que se realize el sorteo. Y despues al hacer clic en el botón "Sortear amigo", el amigo sorteado /al hazar) saldrá por pantalla. Y podremos compenzar un nuevo juego. 
@@ -36,14 +36,31 @@ Esta aplicación web es ideal para realizar sorteos entre personas. Empezé a ac
 ## Captura de Pantalla
 
 ![Vista previa del proyecto](assets/amigo-secreto.png)
-![Vista previa del proyecto](assets/amigo-secreto.png)
-![Vista previa del proyecto](assets/amigo-secreto.png)
-![Vista previa del proyecto](assets/amigo-secreto.png)
-![Vista previa del proyecto](assets/amigo-secreto.png)
+- Este es el cuadro en el cual tendras que ingresar los nombres de tus amigos.
+  ![Vista previa del proyecto](assets/cuadro_para_ingreso_de_amigos.png)
+- Este es el listado de amigos a sortear!
+  ![Vista previa del proyecto](assets/Listado_de_amigos.png)
+
+- Ahora si haces clic en este botón y selecciona al amigos ganador.
+  ![Vista previa del proyecto](assets/boton_para_sortear_amigo.png)
+
+- Este es tu amigo ganador!!!🎈🎈🎈
+ ![Vista previa del proyecto](assets/amigo_ganador.png)
+
+ - Y ahora a comenzar un nuevo juego.
+   ![Vista previa del proyecto](assets/boton_para_iniciar_nuevo_juego.png)
+  
+
+![Vista previa del proyecto](assets/amigo_ganador.png)
+![Vista previa del proyecto](assets/boton_para_iniciar_nuevo_juego.png)
+![Vista previa del proyecto](assets/boton_para_sortear_amigo.png)
+![Vista previa del proyecto](assets/cuadro_para_ingreso_de_amigos.png)
+![Vista previa del proyecto](assets/juego_amigo_secreto.png)
+![Vista previa del proyecto](assets/Listado_de_amigos.png)
 
 ## Contribuciones
-Si deseas mejorar este proyecto, ¡eres bienvenido a colaborar! Puedes hacer un fork, realizar tus cambios y enviar un pull request.
 
+Gracias al Curso de Oracle One y Alura y a sus excelente profesores, por enseñarme a codificar este juego. Y muy linda manera de aprender.🎈🎈
 ## Licencia
-Este proyecto está bajo la licencia MIT. ¡Úsalo libremente! 🎈
+¡Úsa libremente este proyecto! 🎈
 
