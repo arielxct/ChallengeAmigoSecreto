@@ -1,7 +1,6 @@
-
 let listado_amigos = [];
 
-// ************(1) funcion agregar amigos ******************
+// ******************  funcion agregar amigo ****************************
 function agregarAmigo() {
     const input = document.getElementById("amigo");
     const nombre = input.value.trim().toUpperCase();
@@ -15,7 +14,7 @@ function agregarAmigo() {
         input.value = "";
         return;
     }
-    const regex = /^[A-Za-z\s]+$/; 
+    const regex = /^[A-Za-z\s]+$/;
     if (!regex.test(nombre)) {
         alert("El nombre no puede contener símbolos especiales.");
         input.value = "";
@@ -25,13 +24,12 @@ function agregarAmigo() {
     listado_amigos.push(nombre);
     actualizarLista();
     input.value = "";
-    input.focus(); // Esta línea agrega el foco al input
+    input.focus();
 }
 
-//*********(2)  funcion actualizar lista **********************
+
+// ******************  funcion actualizar lista  ****************************
 function actualizarLista() {
-
-
     const lista = document.getElementById("listaAmigos");
     lista.innerHTML = "";
 
@@ -40,14 +38,13 @@ function actualizarLista() {
         li.textContent = amigo;
         lista.appendChild(li);
     }
-
-          
 }
 
-// *****************(3)* funcion sortear amigo ******************
+
+// ******************  funcion sortear amigo ****************************
 function sortearAmigo() {
     if (listado_amigos.length < 2) {
-        alert("Agrega al menos dos amigos antes de sortear."); // cpndiciona que por lo menos deben haber dos amigos
+        alert("Agrega al menos dos amigos antes de sortear.");
         return;
     }
 
@@ -55,19 +52,25 @@ function sortearAmigo() {
     const amigoSecretoSorteado = listado_amigos[indiceListadoSorteado];
 
     const resultado = document.getElementById("resultado");
-    resultado.innerHTML = "<li>⭐ El amigo secreto es: " + amigoSecretoSorteado + " ⭐</li>" ;
+    resultado.innerHTML = "<li>⭐ El amigo secreto es: " + amigoSecretoSorteado + " ⭐</li>";
 
+    // Cambiar texto del botón y evento onclick
+    const botonSortear = document.querySelector(".button-draw"); 
+    botonSortear.textContent = "     ⭐Nuevo Juego ";
+    botonSortear.onclick = nuevoJuego; 
 }
 
-// *****************(4)* funcion nuevo juego ******************
-function nuevoJuego() {
-    listado_amigos = []; 
-    actualizarLista(); 
-    const resultado = document.getElementById("resultado");
-    resultado.innerHTML = ""; 
 
-    
-    botonSortear.textContent = "    ⭐⭐Sortear amigo 😀😀";
+// ******************  funcion nuevo juego ****************************
+
+function nuevoJuego() {
+    listado_amigos = [];
+    actualizarLista();
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+
+    const botonSortear = document.querySelector(".button-draw"); 
+    botonSortear.textContent = "    ⭐⭐Sortear amigo ";
     botonSortear.onclick = sortearAmigo;
 }
 
