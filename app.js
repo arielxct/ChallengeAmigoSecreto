@@ -1,23 +1,32 @@
 let listado_amigos = [];
 
-// ******************  funcion agregar amigo ****************************
 function agregarAmigo() {
     const input = document.getElementById("amigo");
     const nombre = input.value.trim().toUpperCase();
 
     if (nombre === "") {
         alert("Debe ingrear un nombre.");
+        input.focus();
         return;
     }
     if (!isNaN(nombre)) {
         alert("El nombre no puede ser un número.");
         input.value = "";
+        input.focus();
         return;
     }
     const regex = /^[A-Za-z\s]+$/;
     if (!regex.test(nombre)) {
         alert("El nombre no puede contener símbolos especiales.");
         input.value = "";
+        input.focus();
+        return;
+    }
+
+    if (listado_amigos.includes(nombre)) {
+        alert("Nombre repetido. Ingrese un nombre diferente.");
+        input.value = "";
+        input.focus();
         return;
     }
 
@@ -27,8 +36,6 @@ function agregarAmigo() {
     input.focus();
 }
 
-
-// ******************  funcion actualizar lista  ****************************
 function actualizarLista() {
     const lista = document.getElementById("listaAmigos");
     lista.innerHTML = "";
@@ -40,8 +47,6 @@ function actualizarLista() {
     }
 }
 
-
-// ******************  funcion sortear amigo ****************************
 function sortearAmigo() {
     if (listado_amigos.length < 2) {
         alert("Agrega al menos dos amigos antes de sortear.");
@@ -54,14 +59,10 @@ function sortearAmigo() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = "<li>⭐ El amigo secreto es: " + amigoSecretoSorteado + " ⭐</li>";
 
-    // Cambiar texto del botón y evento onclick
-    const botonSortear = document.querySelector(".button-draw"); 
+    const botonSortear = document.querySelector(".button-draw");
     botonSortear.textContent = "     ⭐Nuevo Juego ";
-    botonSortear.onclick = nuevoJuego; 
+    botonSortear.onclick = nuevoJuego;
 }
-
-
-// ******************  funcion nuevo juego ****************************
 
 function nuevoJuego() {
     listado_amigos = [];
@@ -69,10 +70,8 @@ function nuevoJuego() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = "";
 
-    const botonSortear = document.querySelector(".button-draw"); 
+    const botonSortear = document.querySelector(".button-draw");
     botonSortear.textContent = "    ⭐⭐Sortear amigo ";
     botonSortear.onclick = sortearAmigo;
+    
 }
-
-
-
